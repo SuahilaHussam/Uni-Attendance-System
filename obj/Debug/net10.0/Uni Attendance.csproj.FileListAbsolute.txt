@@ -1,11 +1,11 @@
+C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.exe
+C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.dll
 C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\appsettings.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.staticwebassets.runtime.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.staticwebassets.endpoints.json
-C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.exe
 C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.deps.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.runtimeconfig.json
-C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.dll
 C:\Users\HP-01228489194\important\Python\Uni Attendance\bin\Debug\net10.0\Uni Attendance.pdb
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\rpswa.dswa.cache.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\Uni Attendance.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,13 +15,14 @@ C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\Uni At
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\Uni Attendance.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\Uni Attendance.RazorAssemblyInfo.cache
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\Uni Attendance.RazorAssemblyInfo.cs
+C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\Uni Attendance.sourcelink.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\scopedcss\bundle\Uni Attendance.styles.css
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\scopedcss\projectbundle\Uni Attendance.bundle.scp.css
-C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\compressed\uns1o8hqa3-{0}-obcj1hdj6o-obcj1hdj6o.gz
+C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\compressed\uns1o8hqa3-{0}-3866inqqhv-3866inqqhv.gz
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\compressed\04prpa4cix-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\compressed\hq1tqi71js-{0}-lwqsfvkn3m-lwqsfvkn3m.gz
 C:\Users\HP-01228489194\important\Python\Uni Attendance\obj\Debug\net10.0\compressed\i3rmxxfxnb-{0}-bqjiyaj88i-bqjiyaj88i.gz
