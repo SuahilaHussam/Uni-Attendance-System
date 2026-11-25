@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Uni Attendance</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        <!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+    <div class="brand">
+        <i class="bi bi-grid-1x2-fill"></i>
+        <span>AttendFlow</span>
+    </div>
+
+            <div class="sidebar-section">
+                <p class="section-title">WORKSPACE</p>
+
+                <a asp-controller="Home" asp-action="Index" class="nav-item">
+                    <i class="bi bi-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a asp-controller="Projects" asp-action="Index" class="nav-item">
+                    <i class="bi bi-kanban"></i>
+                    <span>Projects</span>
+                </a>
+
+                <a asp-controller="TeamMembers" asp-action="Index" class="nav-item">
+                    <i class="bi bi-people"></i>
+                    <span>Team Members</span>
+                </a>
+
+                <a asp-controller="Projects" asp-action="Kanban" class="nav-item">
+                    <i class="bi bi-columns-gap"></i>
+                    <span>Kanban Board</span>
+                </a>
+            </div>
+
+            <div class="sidebar-section">
+                <p class="section-title">ATTENDANCE</p>
+
+                <a href="#" class="nav-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>Attendance Records</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="bi bi-qr-code-scan"></i>
+                    <span>QR Scanner</span>
+                </a>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="user-avatar">S</div>
+                <div>
+                    <strong>Suhaila</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Navbar -->
+            <header class="topbar">
+
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-outline-primary d-md-none"
+                            id="sidebarToggle"
+                            type="button"
+                            aria-label="Toggle sidebar">
+                        <i class="bi bi-list"></i>
+                    </button>
+
+                    <div>
+                        <h5>@ViewData["Title"]</h5>
+                        <small>University Attendance Management</small>
+                    </div>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="icon-button" type="button">
+                        <i class="bi bi-bell"></i>
+                    </button>
+
+                    <button class="icon-button" type="button">
+                        <i class="bi bi-gear"></i>
+                    </button>
+
+                    <div class="profile-avatar">S</div>
+                </div>
+
+            </header>
+
+            <!-- Page Content -->
+            <section class="page-content">
+                @RenderBody()
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

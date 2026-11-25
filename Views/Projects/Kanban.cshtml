@@ -1,0 +1,137 @@
+
+@{
+    ViewData["Title"] = "Kanban Board";
+}
+
+<div class="page-heading">
+    <div>
+        <h2>Kanban Board</h2>
+        <p class="text-secondary">Track tasks and monitor project progress.</p>
+    </div>
+
+    <button class="btn btn-primary">
+        <i class="bi bi-plus-lg"></i> Add New Task
+    </button>
+</div>
+
+<div class="d-flex flex-wrap gap-2 mb-4">
+    <button class="btn btn-primary btn-sm">All Tasks</button>
+    <button class="btn btn-outline-primary btn-sm">My Tasks</button>
+    <button class="btn btn-outline-primary btn-sm">High Priority</button>
+</div>
+
+<div class="kanban-board">
+
+    <!-- To Do -->
+    <div class="kanban-column">
+        <div class="kanban-column-header">
+            <h5><span class="status-dot bg-secondary"></span> To Do</h5>
+            <span class="task-count">3</span>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-high">High</span>
+            <h6>Design Login Page</h6>
+            <p>Create the login interface and validation design.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Dec 05</span>
+                <span class="task-avatar">SA</span>
+            </div>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-medium">Medium</span>
+            <h6>Database Design</h6>
+            <p>Prepare the database schema and relationships.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Dec 08</span>
+                <span class="task-avatar">AM</span>
+            </div>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-low">Low</span>
+            <h6>Prepare Documentation</h6>
+            <p>Write the initial project documentation.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Dec 12</span>
+                <span class="task-avatar">MK</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- In Progress -->
+    <div class="kanban-column">
+        <div class="kanban-column-header">
+            <h5><span class="status-dot bg-primary"></span> In Progress</h5>
+            <span class="task-count">2</span>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-high">High</span>
+            <h6>Develop Dashboard</h6>
+            <p>Build the main dashboard and statistics cards.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Dec 10</span>
+                <span class="task-avatar">SA</span>
+            </div>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-medium">Medium</span>
+            <h6>Student Management</h6>
+            <p>Implement student information and management pages.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Dec 14</span>
+                <span class="task-avatar">OM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review -->
+    <div class="kanban-column">
+        <div class="kanban-column-header">
+            <h5><span class="status-dot bg-warning"></span> In Review</h5>
+            <span class="task-count">1</span>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-medium">Medium</span>
+            <h6>Attendance Records</h6>
+            <p>Review attendance records and filtering features.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Dec 16</span>
+                <span class="task-avatar">AH</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Done -->
+    <div class="kanban-column">
+        <div class="kanban-column-header">
+            <h5><span class="status-dot bg-success"></span> Done</h5>
+            <span class="task-count">2</span>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-low">Low</span>
+            <h6>Project Setup</h6>
+            <p>Initialize the project structure and environment.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Nov 20</span>
+                <span class="task-avatar">SA</span>
+            </div>
+        </div>
+
+        <div class="kanban-task">
+            <span class="priority-badge priority-low">Low</span>
+            <h6>Requirements Analysis</h6>
+            <p>Collect and organize system requirements.</p>
+            <div class="task-footer">
+                <span><i class="bi bi-calendar"></i> Nov 25</span>
+                <span class="task-avatar">MK</span>
+            </div>
+        </div>
+    </div>
+
+</div>

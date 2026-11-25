@@ -1,0 +1,107 @@
+
+@{
+    ViewData["Title"] = "Add Team Member";
+}
+
+<div class="page-heading">
+    <div>
+        <h2>Add New Member</h2>
+        <p class="text-secondary">Add a new member to your team.</p>
+    </div>
+
+    <a asp-action="Index" class="btn btn-outline-primary">
+        <i class="bi bi-arrow-left"></i> Back
+    </a>
+</div>
+
+<div class="content-card">
+    <form>
+        <h5 class="mb-4">Personal Information</h5>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control"
+                       placeholder="Enter full name" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control"
+                       placeholder="example@email.com" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control"
+                       placeholder="+20 100 000 0000" />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Member ID</label>
+                <input type="text" class="form-control"
+                       placeholder="Enter member ID" />
+            </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <h5 class="mb-4">Work Information</h5>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Role</label>
+                <select class="form-select" required>
+                    <option value="">Select role</option>
+                    <option>Team Leader</option>
+                    <option>Developer</option>
+                    <option>Designer</option>
+                    <option>Member</option>
+                    <option>Admin</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Department</label>
+                <select class="form-select">
+                    <option value="">Select department</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Artificial Intelligence</option>
+                    <option>Medical Informatics</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Joining Date</label>
+                <input type="date" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Account Status</label>
+                <select class="form-select">
+                    <option selected>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Assign Project</label>
+                <select class="form-select">
+                    <option value="">Select project</option>
+                    <option>University Attendance System</option>
+                    <option>Student Portal</option>
+                    <option>Medical Management System</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end gap-2 mt-4">
+            <a asp-action="Index" class="btn btn-outline-primary">Cancel</a>
+
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-person-plus"></i> Add Member
+            </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,100 @@
+
+@{
+    ViewData["Title"] = "Member Details";
+}
+
+<div class="page-heading">
+    <div>
+        <h2>Member Details</h2>
+        <p class="text-secondary">View team member information and activity.</p>
+    </div>
+
+    <a asp-action="Index" class="btn btn-outline-primary">
+        <i class="bi bi-arrow-left"></i> Back to Members
+    </a>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-4">
+        <div class="content-card text-center h-100">
+            <div class="task-avatar mx-auto mb-3"
+                 style="width: 85px; height: 85px; font-size: 28px;">
+                SA
+            </div>
+
+            <h4>Suhaila Ahmed</h4>
+            <p class="text-secondary">Team Leader</p>
+
+            <span class="status-badge status-active">Active</span>
+
+            <hr />
+
+            <div class="text-start">
+                <p><i class="bi bi-envelope me-2"></i> suhaila@example.com</p>
+                <p><i class="bi bi-telephone me-2"></i> +20 100 000 0000</p>
+                <p><i class="bi bi-calendar me-2"></i> Joined October 2026</p>
+                <p><i class="bi bi-briefcase me-2"></i> 4 Assigned Projects</p>
+            </div>
+
+            <a asp-action="Index" class="btn btn-outline-primary w-100 mt-3">
+                Back to Team
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="content-card mb-4">
+            <h5 class="mb-4">Member Overview</h5>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <p class="text-secondary mb-1">Full Name</p>
+                    <h6>Suhaila Ahmed</h6>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="text-secondary mb-1">Role</p>
+                    <h6>Team Leader</h6>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="text-secondary mb-1">Department</p>
+                    <h6>Computer Science</h6>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="text-secondary mb-1">Member ID</p>
+                    <h6>#001</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h5 class="mb-4">Assigned Projects</h5>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <h6>University Attendance System</h6>
+                    <p class="text-secondary mb-0">Project Management System</p>
+                </div>
+                <span class="status-badge status-in-progress">In Progress</span>
+            </div>
+
+            <div class="progress mb-4" style="height: 7px;">
+                <div class="progress-bar" style="width: 65%"></div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h6>Student Portal</h6>
+                    <p class="text-secondary mb-0">University Services</p>
+                </div>
+                <span class="status-badge status-active">Completed</span>
+            </div>
+
+            <div class="progress mt-3" style="height: 7px;">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+</div>

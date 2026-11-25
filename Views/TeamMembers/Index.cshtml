@@ -1,0 +1,138 @@
+
+@{
+    ViewData["Title"] = "Team Members";
+}
+
+<div class="page-heading">
+    <div>
+        <h2>Team Members</h2>
+        <p class="text-secondary">Manage your team and view member information.</p>
+    </div>
+
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-person-plus"></i> Add Member
+    </a>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-people"></i></div>
+            <div>
+                <p>Total Members</p>
+                <h3>12</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-person-check"></i></div>
+            <div>
+                <p>Active Members</p>
+                <h3>10</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-person-workspace"></i></div>
+            <div>
+                <p>Team Leaders</p>
+                <h3>2</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-card">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <h5 class="mb-0">All Members</h5>
+
+        <div class="d-flex gap-2">
+            <input type="text" class="form-control"
+                   placeholder="Search members..." />
+            <select class="form-select">
+                <option>All Roles</option>
+                <option>Admin</option>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Member</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table custom-table align-middle">
+            <thead>
+                <tr>
+                    <th>Member</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                    <th>Projects</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="task-avatar">SA</span>
+                            <span>Suhaila Ahmed</span>
+                        </div>
+                    </td>
+                    <td>Team Leader</td>
+                    <td>suhaila@example.com</td>
+                    <td>4</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td><a asp-action="Details" asp-route-id="1" class="btn btn-sm btn-outline-primary">View</a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="task-avatar">AM</span>
+                            <span>Ahmed Mohamed</span>
+                        </div>
+                    </td>
+                    <td>Developer</td>
+                    <td>ahmed@example.com</td>
+                    <td>3</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td><a asp-action="Details" asp-route-id="2" class="btn btn-sm btn-outline-primary">View</a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="task-avatar">MK</span>
+                            <span>Mohamed Khaled</span>
+                        </div>
+                    </td>
+                    <td>Designer</td>
+                    <td>mohamed@example.com</td>
+                    <td>2</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td><a asp-action="Details" asp-route-id="3" class="btn btn-sm btn-outline-primary">View</a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="task-avatar">OM</span>
+                            <span>Omar Hassan</span>
+                        </div>
+                    </td>
+                    <td>Developer</td>
+                    <td>omar@example.com</td>
+                    <td>1</td>
+                    <td><span class="status-badge status-inactive">Inactive</span></td>
+                    <td><a asp-action="Details" asp-route-id="4" class="btn btn-sm btn-outline-primary">View</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

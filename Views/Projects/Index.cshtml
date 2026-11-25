@@ -1,0 +1,93 @@
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div class="page-heading">
+    <div>
+        <h2>Projects</h2>
+        <p class="text-secondary">Manage and track all your projects in one place.</p>
+    </div>
+    <a asp-controller="Projects" asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-lg"></i> New Project
+    </a>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="stat-card">
+            <span>Total Projects</span>
+            <h3>12</h3>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="stat-card">
+            <span>In Progress</span>
+            <h3>5</h3>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="stat-card">
+            <span>Completed</span>
+            <h3>7</h3>
+        </div>
+    </div>
+</div>
+
+<div class="row g-3">
+    <div class="col-md-6 col-xl-4">
+        <div class="project-card">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="status-badge in-progress">In Progress</span>
+                <span class="text-secondary">#PR-001</span>
+            </div>
+            <h5>University Attendance System</h5>
+            <p class="text-secondary">QR-based student attendance management system.</p>
+            <div class="d-flex justify-content-between mb-2">
+                <small>Progress</small><small>65%</small>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar" style="width:65%"></div>
+            </div>
+            <a asp-controller="Projects" asp-action="Details" asp-route-id="1"
+               class="btn btn-outline-primary btn-sm">View Details</a>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-xl-4">
+        <div class="project-card">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="status-badge completed">Completed</span>
+                <span class="text-secondary">#PR-002</span>
+            </div>
+            <h5>Medical Management System</h5>
+            <p class="text-secondary">A platform for organizing medical information.</p>
+            <div class="d-flex justify-content-between mb-2">
+                <small>Progress</small><small>100%</small>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar" style="width:100%"></div>
+            </div>
+            <a asp-controller="Projects" asp-action="Details" asp-route-id="2"
+               class="btn btn-outline-primary btn-sm">View Details</a>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-xl-4">
+        <div class="project-card">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="status-badge planning">Planning</span>
+                <span class="text-secondary">#PR-003</span>
+            </div>
+            <h5>Student Portal</h5>
+            <p class="text-secondary">A portal for student services and academic updates.</p>
+            <div class="d-flex justify-content-between mb-2">
+                <small>Progress</small><small>25%</small>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar" style="width:25%"></div>
+            </div>
+            <a asp-controller="Projects" asp-action="Details" asp-route-id="3"
+               class="btn btn-outline-primary btn-sm">View Details</a>
+        </div>
+    </div>
+</div>

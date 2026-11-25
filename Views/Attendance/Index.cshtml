@@ -1,0 +1,114 @@
+
+@{
+    ViewData["Title"] = "Attendance Records";
+}
+
+<div class="page-heading">
+    <div>
+        <h2>Attendance Records</h2>
+        <p>Track and manage student attendance records.</p>
+    </div>
+
+    <button class="btn btn-primary">
+        <i class="bi bi-download"></i> Export Records
+    </button>
+</div>
+
+<div class="row g-4 mb-4">
+    <div class="col-md-4">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-people"></i></div>
+            <div>
+                <p>Total Students</p>
+                <h3>120</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-check-circle"></i></div>
+            <div>
+                <p>Present Today</p>
+                <h3>108</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-x-circle"></i></div>
+            <div>
+                <p>Absent Today</p>
+                <h3>12</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-card">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+        <div>
+            <h5>Attendance History</h5>
+            <p class="text-secondary mb-0">Recent student attendance activity</p>
+        </div>
+
+        <div class="d-flex gap-2 flex-wrap">
+            <input type="date" class="form-control" />
+            <select class="form-select">
+                <option>All Status</option>
+                <option>Present</option>
+                <option>Absent</option>
+                <option>Late</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Student ID</th>
+                    <th>Date</th>
+                    <th>Check In</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ahmed Mohamed</td>
+                    <td>2023001</td>
+                    <td>25 Nov 2026</td>
+                    <td>08:15 AM</td>
+                    <td><span class="status-badge status-active">Present</span></td>
+                </tr>
+
+                <tr>
+                    <td>Sarah Ali</td>
+                    <td>2023002</td>
+                    <td>25 Nov 2026</td>
+                    <td>08:35 AM</td>
+                    <td><span class="status-badge status-in-progress">Late</span></td>
+                </tr>
+
+                <tr>
+                    <td>Omar Hassan</td>
+                    <td>2023003</td>
+                    <td>25 Nov 2026</td>
+                    <td>—</td>
+                    <td><span class="status-badge status-inactive">Absent</span></td>
+                </tr>
+
+                <tr>
+                    <td>Mariam Adel</td>
+                    <td>2023004</td>
+                    <td>25 Nov 2026</td>
+                    <td>08:05 AM</td>
+                    <td><span class="status-badge status-active">Present</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

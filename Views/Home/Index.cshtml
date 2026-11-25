@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="mb-4">
+    <h3 class="fw-bold">Welcome back, Suhaila 👋</h3>
+    <p style="color:var(--text-secondary)">Here's what's happening with your workspace today.</p>
+</div>
+
+<div class="dashboard-grid">
+
+    <div class="stat-card">
+        <div class="card-icon"><i class="bi bi-kanban"></i></div>
+        <h3>12</h3>
+        <p>Total Projects</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="card-icon"><i class="bi bi-clock-history"></i></div>
+        <h3>05</h3>
+        <p>In Progress</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="card-icon"><i class="bi bi-check-circle"></i></div>
+        <h3>07</h3>
+        <p>Completed Projects</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="card-icon"><i class="bi bi-people"></i></div>
+        <h3>24</h3>
+        <p>Team Members</p>
+    </div>
+
+</div>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="fw-bold">Recent Projects</h4>
+    <a asp-controller="Projects" asp-action="Index" class="btn btn-primary-custom">View All</a>
+</div>
+
+<div class="projects-grid">
+
+    <div class="project-card">
+        <div class="project-header">
+            <span class="status-badge status-progress">In Progress</span>
+            <i class="bi bi-three-dots"></i>
+        </div>
+        <h5>Student Attendance System</h5>
+        <p>University attendance management using QR codes.</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:75%"></div>
+        </div>
+        <small style="color:var(--text-secondary)">75% Completed</small>
+    </div>
+
+    <div class="project-card">
+        <div class="project-header">
+            <span class="status-badge status-done">Completed</span>
+            <i class="bi bi-three-dots"></i>
+        </div>
+        <h5>Contact Book</h5>
+        <p>A simple application to manage personal contacts.</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:100%"></div>
+        </div>
+        <small style="color:var(--text-secondary)">100% Completed</small>
+    </div>
+
+    <div class="project-card">
+        <div class="project-header">
+            <span class="status-badge status-todo">Pending</span>
+            <i class="bi bi-three-dots"></i>
+        </div>
+        <h5>Medical Management</h5>
+        <p>Organizing medical information and patient records.</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:30%"></div>
+        </div>
+        <small style="color:var(--text-secondary)">30% Completed</small>
+    </div>
+
+</div>
